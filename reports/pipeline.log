@@ -1,0 +1,193 @@
+01:54:50 [INFO] ==================================================
+01:54:50 [INFO]   INSTACART ETL PIPELINE STARTING
+01:54:50 [INFO] ==================================================
+01:54:50 [INFO] [STEP 1/5] Extract and Explore
+01:54:50 [INFO] Reading aisles with pd.read_csv() ...
+01:54:51 [INFO] Reading departments with pd.read_csv() ...
+01:54:51 [INFO] Reading products with pd.read_csv() ...
+01:54:51 [INFO] Reading orders with pd.read_csv() ...
+01:54:55 [INFO] Reading order_products_train with pd.read_csv() ...
+01:54:55 [INFO] Reading order_products_prior in chunks of 500000 rows ...
+01:54:56 [INFO]   chunk 1: 500000 rows  (total so far: 500000)
+01:54:56 [INFO]   chunk 2: 500000 rows  (total so far: 1000000)
+01:54:56 [INFO]   chunk 3: 500000 rows  (total so far: 1500000)
+01:54:56 [INFO]   chunk 4: 500000 rows  (total so far: 2000000)
+01:54:56 [INFO]   chunk 5: 500000 rows  (total so far: 2500000)
+01:54:56 [INFO]   chunk 6: 500000 rows  (total so far: 3000000)
+01:54:56 [INFO]   chunk 7: 500000 rows  (total so far: 3500000)
+01:54:57 [INFO]   chunk 8: 500000 rows  (total so far: 4000000)
+01:54:57 [INFO]   chunk 9: 500000 rows  (total so far: 4500000)
+01:54:57 [INFO]   chunk 10: 500000 rows  (total so far: 5000000)
+01:54:57 [INFO]   chunk 11: 500000 rows  (total so far: 5500000)
+01:54:57 [INFO]   chunk 12: 500000 rows  (total so far: 6000000)
+01:54:57 [INFO]   chunk 13: 500000 rows  (total so far: 6500000)
+01:54:57 [INFO]   chunk 14: 500000 rows  (total so far: 7000000)
+01:54:57 [INFO]   chunk 15: 500000 rows  (total so far: 7500000)
+01:54:58 [INFO]   chunk 16: 500000 rows  (total so far: 8000000)
+01:54:58 [INFO]   chunk 17: 500000 rows  (total so far: 8500000)
+01:54:58 [INFO]   chunk 18: 500000 rows  (total so far: 9000000)
+01:54:58 [INFO]   chunk 19: 500000 rows  (total so far: 9500000)
+01:54:58 [INFO]   chunk 20: 500000 rows  (total so far: 10000000)
+01:54:58 [INFO]   chunk 21: 500000 rows  (total so far: 10500000)
+01:54:58 [INFO]   chunk 22: 500000 rows  (total so far: 11000000)
+01:54:58 [INFO]   chunk 23: 500000 rows  (total so far: 11500000)
+01:54:59 [INFO]   chunk 24: 500000 rows  (total so far: 12000000)
+01:54:59 [INFO]   chunk 25: 500000 rows  (total so far: 12500000)
+01:54:59 [INFO]   chunk 26: 500000 rows  (total so far: 13000000)
+01:54:59 [INFO]   chunk 27: 500000 rows  (total so far: 13500000)
+01:54:59 [INFO]   chunk 28: 500000 rows  (total so far: 14000000)
+01:54:59 [INFO]   chunk 29: 500000 rows  (total so far: 14500000)
+01:54:59 [INFO]   chunk 30: 500000 rows  (total so far: 15000000)
+01:54:59 [INFO]   chunk 31: 500000 rows  (total so far: 15500000)
+01:55:00 [INFO]   chunk 32: 500000 rows  (total so far: 16000000)
+01:55:00 [INFO]   chunk 33: 500000 rows  (total so far: 16500000)
+01:55:00 [INFO]   chunk 34: 500000 rows  (total so far: 17000000)
+01:55:00 [INFO]   chunk 35: 500000 rows  (total so far: 17500000)
+01:55:00 [INFO]   chunk 36: 500000 rows  (total so far: 18000000)
+01:55:00 [INFO]   chunk 37: 500000 rows  (total so far: 18500000)
+01:55:00 [INFO]   chunk 38: 500000 rows  (total so far: 19000000)
+01:55:01 [INFO]   chunk 39: 500000 rows  (total so far: 19500000)
+01:55:01 [INFO]   chunk 40: 500000 rows  (total so far: 20000000)
+01:55:01 [INFO]   chunk 41: 500000 rows  (total so far: 20500000)
+01:55:01 [INFO]   chunk 42: 500000 rows  (total so far: 21000000)
+01:55:01 [INFO]   chunk 43: 500000 rows  (total so far: 21500000)
+01:55:01 [INFO]   chunk 44: 500000 rows  (total so far: 22000000)
+01:55:01 [INFO]   chunk 45: 500000 rows  (total so far: 22500000)
+01:55:02 [INFO]   chunk 46: 500000 rows  (total so far: 23000000)
+01:55:02 [INFO]   chunk 47: 500000 rows  (total so far: 23500000)
+01:55:02 [INFO]   chunk 48: 500000 rows  (total so far: 24000000)
+01:55:02 [INFO]   chunk 49: 500000 rows  (total so far: 24500000)
+01:55:02 [INFO]   chunk 50: 500000 rows  (total so far: 25000000)
+01:55:02 [INFO]   chunk 51: 500000 rows  (total so far: 25500000)
+01:55:02 [INFO]   chunk 52: 500000 rows  (total so far: 26000000)
+01:55:03 [INFO]   chunk 53: 500000 rows  (total so far: 26500000)
+01:55:03 [INFO]   chunk 54: 500000 rows  (total so far: 27000000)
+01:55:03 [INFO]   chunk 55: 500000 rows  (total so far: 27500000)
+01:55:03 [INFO]   chunk 56: 500000 rows  (total so far: 28000000)
+01:55:03 [INFO]   chunk 57: 500000 rows  (total so far: 28500000)
+01:55:03 [INFO]   chunk 58: 500000 rows  (total so far: 29000000)
+01:55:03 [INFO]   chunk 59: 500000 rows  (total so far: 29500000)
+01:55:04 [INFO]   chunk 60: 500000 rows  (total so far: 30000000)
+01:55:04 [INFO]   chunk 61: 500000 rows  (total so far: 30500000)
+01:55:04 [INFO]   chunk 62: 500000 rows  (total so far: 31000000)
+01:55:04 [INFO]   chunk 63: 500000 rows  (total so far: 31500000)
+01:55:04 [INFO]   chunk 64: 500000 rows  (total so far: 32000000)
+01:55:04 [INFO]   chunk 65: 434489 rows  (total so far: 32434489)
+01:55:04 [INFO] Report saved to reports\data_exploration.txt
+01:55:04 [INFO] [STEP 2/5] Transform
+01:55:04 [INFO] Transforming aisles (134 rows)
+01:55:04 [INFO] transform_aisles done
+01:55:04 [INFO] Transforming departments (21 rows)
+01:55:04 [INFO] transform_departments done
+01:55:04 [INFO] Transforming products (49688 rows)
+01:55:04 [INFO] Added new columns: product_name_length, product_name_upper
+01:55:04 [INFO] transform_products done
+01:55:04 [INFO] Transforming orders (3421083 rows)
+01:55:04 [INFO] First orders found: 206209
+01:55:05 [INFO] Order periods: {'Afternoon': 1390074, 'Morning': 1141125, 'Evening': 656568, 'Night': 233316}
+01:55:05 [INFO] transform_orders done
+01:55:05 [INFO] Transforming order_products [train] (1384617 rows)
+01:55:05 [INFO] Reorder rate: 59.9%
+01:55:05 [INFO] transform_order_products [train] done
+01:55:05 [INFO] transform_all done - 5 tables transformed
+01:55:05 [INFO] [STEP 3/5] Clean
+01:55:05 [INFO] Cleaning aisles...
+01:55:05 [INFO] aisles cleaned: 134 -> 134 rows
+01:55:05 [INFO] Cleaning departments...
+01:55:05 [INFO] departments cleaned: 21 -> 21 rows
+01:55:05 [INFO] Cleaning products...
+01:55:05 [INFO] products with invalid aisle_id: 0
+01:55:05 [INFO] products with invalid department_id: 0
+01:55:05 [INFO] products cleaned: 49688 -> 49688 rows
+01:55:05 [INFO] Cleaning orders...
+01:55:06 [INFO] orders cleaned: 3421083 -> 3421083 rows
+01:55:06 [INFO] Cleaning order_products [train]...
+01:55:07 [INFO] [train] orphan order_id rows: 0
+01:55:07 [INFO] [train] orphan product_id rows: 0
+01:55:07 [INFO] [train] cleaned: 1384617 -> 1384617 rows
+01:55:07 [INFO] Cleaning report saved to reports\cleaning_report.txt
+01:55:07 [INFO] clean_all done - 5 tables cleaned
+01:55:07 [INFO] Saved aisles.csv (134 rows)
+01:55:07 [INFO] Saved departments.csv (21 rows)
+01:55:07 [INFO] Saved products.csv (49688 rows)
+01:55:17 [INFO] Saved orders.csv (3421083 rows)
+01:55:18 [INFO] Saved order_products_train.csv (1384617 rows)
+01:55:18 [INFO] Cleaned files saved to C:\Users\CG\Downloads\archive\DATA\instacart-bigdata-etl\data\processed
+01:55:18 [INFO] [STEP 4/5] Load into PostgreSQL
+01:55:18 [INFO] Database bigdata_db already exists
+01:55:18 [INFO] Connected to PostgreSQL - host=localhost db=bigdata_db
+01:55:18 [INFO] SQL file executed: schema.sql
+01:55:18 [INFO] Schema created
+01:55:18 [INFO] Truncated table: aisles
+01:55:18 [INFO] Loaded 134 rows into aisles
+01:55:18 [INFO] Truncated table: departments
+01:55:18 [INFO] Loaded 21 rows into departments
+01:55:18 [INFO] Truncated table: products
+01:55:20 [INFO] Loaded 49688 rows into products
+01:55:20 [INFO] Truncated table: orders
+01:56:07 [INFO] Loaded 3421083 rows into orders
+01:56:07 [INFO] Truncated table: order_products_train
+01:57:17 [INFO] Loaded 1384617 rows into order_products_train
+01:57:17 [INFO] Truncated table: order_products_prior
+01:57:17 [INFO] Loading order_products_prior in chunks... limit=3000000
+01:57:17 [INFO] Transforming order_products [prior] (500000 rows)
+01:57:18 [INFO] Reorder rate: 59.0%
+01:57:18 [INFO] transform_order_products [prior] done
+01:57:18 [INFO] Cleaning order_products [prior_chunk]...
+01:57:18 [INFO] [prior_chunk] orphan order_id rows: 0
+01:57:18 [INFO] [prior_chunk] orphan product_id rows: 0
+01:57:18 [INFO] [prior_chunk] cleaned: 500000 -> 500000 rows
+01:57:35 [INFO]   chunk 1: 500000 rows loaded (total: 500000)
+01:57:35 [INFO] Transforming order_products [prior] (500000 rows)
+01:57:35 [INFO] Reorder rate: 59.0%
+01:57:35 [INFO] transform_order_products [prior] done
+01:57:35 [INFO] Cleaning order_products [prior_chunk]...
+01:57:35 [INFO] [prior_chunk] orphan order_id rows: 0
+01:57:35 [INFO] [prior_chunk] orphan product_id rows: 0
+01:57:35 [INFO] [prior_chunk] cleaned: 500000 -> 500000 rows
+01:57:58 [INFO]   chunk 2: 500000 rows loaded (total: 1000000)
+01:57:58 [INFO] Transforming order_products [prior] (500000 rows)
+01:57:58 [INFO] Reorder rate: 59.3%
+01:57:58 [INFO] transform_order_products [prior] done
+01:57:58 [INFO] Cleaning order_products [prior_chunk]...
+01:57:58 [INFO] [prior_chunk] orphan order_id rows: 0
+01:57:58 [INFO] [prior_chunk] orphan product_id rows: 0
+01:57:58 [INFO] [prior_chunk] cleaned: 500000 -> 500000 rows
+01:58:19 [INFO]   chunk 3: 500000 rows loaded (total: 1500000)
+01:58:19 [INFO] Transforming order_products [prior] (500000 rows)
+01:58:19 [INFO] Reorder rate: 58.5%
+01:58:19 [INFO] transform_order_products [prior] done
+01:58:19 [INFO] Cleaning order_products [prior_chunk]...
+01:58:19 [INFO] [prior_chunk] orphan order_id rows: 0
+01:58:19 [INFO] [prior_chunk] orphan product_id rows: 0
+01:58:19 [INFO] [prior_chunk] cleaned: 500000 -> 500000 rows
+01:58:38 [INFO]   chunk 4: 500000 rows loaded (total: 2000000)
+01:58:38 [INFO] Transforming order_products [prior] (500000 rows)
+01:58:38 [INFO] Reorder rate: 59.1%
+01:58:38 [INFO] transform_order_products [prior] done
+01:58:38 [INFO] Cleaning order_products [prior_chunk]...
+01:58:39 [INFO] [prior_chunk] orphan order_id rows: 0
+01:58:39 [INFO] [prior_chunk] orphan product_id rows: 0
+01:58:39 [INFO] [prior_chunk] cleaned: 500000 -> 500000 rows
+01:59:06 [INFO]   chunk 5: 500000 rows loaded (total: 2500000)
+01:59:06 [INFO] Transforming order_products [prior] (500000 rows)
+01:59:06 [INFO] Reorder rate: 58.6%
+01:59:06 [INFO] transform_order_products [prior] done
+01:59:06 [INFO] Cleaning order_products [prior_chunk]...
+01:59:07 [INFO] [prior_chunk] orphan order_id rows: 0
+01:59:07 [INFO] [prior_chunk] orphan product_id rows: 0
+01:59:07 [INFO] [prior_chunk] cleaned: 500000 -> 500000 rows
+01:59:26 [INFO]   chunk 6: 500000 rows loaded (total: 3000000)
+01:59:26 [INFO] Row limit reached (3000000)
+01:59:26 [INFO] order_products_prior done. Total loaded: 3000000
+01:59:26 [INFO] Adding primary keys, foreign keys and indexes...
+01:59:43 [INFO] All constraints and indexes added successfully
+01:59:43 [INFO] [STEP 5/5] Verify
+01:59:43 [INFO] Connected to PostgreSQL - host=localhost db=bigdata_db
+01:59:43 [INFO] COUNT(*) FROM aisles                       = 134
+01:59:43 [INFO] COUNT(*) FROM departments                  = 21
+01:59:43 [INFO] COUNT(*) FROM products                     = 49688
+01:59:43 [INFO] COUNT(*) FROM orders                       = 3421083
+01:59:44 [INFO] COUNT(*) FROM order_products_train         = 1384617
+01:59:44 [INFO] COUNT(*) FROM order_products_prior         = 3000000
+01:59:44 [INFO] Verification report saved to reports\verification_report.txt

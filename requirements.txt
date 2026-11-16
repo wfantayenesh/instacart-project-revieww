@@ -1,0 +1,20 @@
+# ============================================================
+# requirements.txt – Python packages for this project
+# Install with:  pip install -r requirements.txt
+# ============================================================
+
+# Data manipulation
+pandas==2.2.2
+
+# PostgreSQL driver (binary wheel – no C compiler needed on Windows)
+psycopg2-binary==2.9.9
+
+# Read .env files into environment variables
+python-dotenv==1.0.1
+
+# Charts (Agg backend – no display window required)
+matplotlib==3.9.0
+
+# Jupyter notebook support
+ipykernel==6.29.4
+notebook==7.2.0

@@ -1,0 +1,289 @@
+Instacart Data Exploration Report
+============================================================
+
+FILE: aisles
+shape: (134, 2)
+columns: ['aisle_id', 'aisle']
+
+dtypes:
+aisle_id    int64
+aisle         str
+dtype: object
+
+head(5):
+   aisle_id                       aisle
+0         1       prepared soups salads
+1         2           specialty cheeses
+2         3         energy granola bars
+3         4               instant foods
+4         5  marinades meat preparation
+
+describe():
+          aisle_id                  aisle
+count   134.000000                    134
+unique         NaN                    134
+top            NaN  prepared soups salads
+freq           NaN                      1
+mean     67.500000                    NaN
+std      38.826537                    NaN
+min       1.000000                    NaN
+25%      34.250000                    NaN
+50%      67.500000                    NaN
+75%     100.750000                    NaN
+max     134.000000                    NaN
+
+info():
+<class 'pandas.DataFrame'>
+RangeIndex: 134 entries, 0 to 133
+Data columns (total 2 columns):
+ #   Column    Non-Null Count  Dtype
+---  ------    --------------  -----
+ 0   aisle_id  134 non-null    int64
+ 1   aisle     134 non-null    str  
+dtypes: int64(1), str(1)
+memory usage: 2.2 KB
+
+
+isnull().sum():
+aisle_id    0
+aisle       0
+dtype: int64
+Duplicate rows: 0
+
+FILE: departments
+shape: (21, 2)
+columns: ['department_id', 'department']
+
+dtypes:
+department_id    int64
+department         str
+dtype: object
+
+head(5):
+   department_id department
+0              1     frozen
+1              2      other
+2              3     bakery
+3              4    produce
+4              5    alcohol
+
+describe():
+        department_id department
+count       21.000000         21
+unique            NaN         21
+top               NaN     frozen
+freq              NaN          1
+mean        11.000000        NaN
+std          6.204837        NaN
+min          1.000000        NaN
+25%          6.000000        NaN
+50%         11.000000        NaN
+75%         16.000000        NaN
+max         21.000000        NaN
+
+info():
+<class 'pandas.DataFrame'>
+RangeIndex: 21 entries, 0 to 20
+Data columns (total 2 columns):
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
+ 0   department_id  21 non-null     int64
+ 1   department     21 non-null     str  
+dtypes: int64(1), str(1)
+memory usage: 468.0 bytes
+
+
+isnull().sum():
+department_id    0
+department       0
+dtype: int64
+Duplicate rows: 0
+
+FILE: products
+shape: (49688, 4)
+columns: ['product_id', 'product_name', 'aisle_id', 'department_id']
+
+dtypes:
+product_id       int64
+product_name       str
+aisle_id         int64
+department_id    int64
+dtype: object
+
+head(5):
+   product_id                                                       product_name  aisle_id  department_id
+0           1                                         Chocolate Sandwich Cookies        61             19
+1           2                                                   All-Seasons Salt       104             13
+2           3                               Robust Golden Unsweetened Oolong Tea        94              7
+3           4  Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce        38              1
+4           5                                          Green Chile Anytime Sauce         5             13
+
+describe():
+          product_id                product_name      aisle_id  department_id
+count   49688.000000                       49688  49688.000000   49688.000000
+unique           NaN                       49688           NaN            NaN
+top              NaN  Chocolate Sandwich Cookies           NaN            NaN
+freq             NaN                           1           NaN            NaN
+mean    24844.500000                         NaN     67.769582      11.728687
+std     14343.834425                         NaN     38.316162       5.850410
+min         1.000000                         NaN      1.000000       1.000000
+25%     12422.750000                         NaN     35.000000       7.000000
+50%     24844.500000                         NaN     69.000000      13.000000
+75%     37266.250000                         NaN    100.000000      17.000000
+max     49688.000000                         NaN    134.000000      21.000000
+
+info():
+<class 'pandas.DataFrame'>
+RangeIndex: 49688 entries, 0 to 49687
+Data columns (total 4 columns):
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
+ 0   product_id     49688 non-null  int64
+ 1   product_name   49688 non-null  str  
+ 2   aisle_id       49688 non-null  int64
+ 3   department_id  49688 non-null  int64
+dtypes: int64(3), str(1)
+memory usage: 1.5 MB
+
+
+isnull().sum():
+product_id       0
+product_name     0
+aisle_id         0
+department_id    0
+dtype: int64
+Duplicate rows: 0
+
+FILE: orders
+shape: (3421083, 7)
+columns: ['order_id', 'user_id', 'eval_set', 'order_number', 'order_dow', 'order_hour_of_day', 'days_since_prior_order']
+
+dtypes:
+order_id                    int64
+user_id                     int64
+eval_set                      str
+order_number                int64
+order_dow                   int64
+order_hour_of_day           int64
+days_since_prior_order    float64
+dtype: object
+
+head(5):
+   order_id  user_id eval_set  order_number  order_dow  order_hour_of_day  days_since_prior_order
+0   2539329        1    prior             1          2                  8                     NaN
+1   2398795        1    prior             2          3                  7                    15.0
+2    473747        1    prior             3          3                 12                    21.0
+3   2254736        1    prior             4          4                  7                    29.0
+4    431534        1    prior             5          4                 15                    28.0
+
+describe():
+            order_id       user_id eval_set  order_number     order_dow  order_hour_of_day  days_since_prior_order
+count   3.421083e+06  3.421083e+06  3421083  3.421083e+06  3.421083e+06       3.421083e+06            3.214874e+06
+unique           NaN           NaN        3           NaN           NaN                NaN                     NaN
+top              NaN           NaN    prior           NaN           NaN                NaN                     NaN
+freq             NaN           NaN  3214874           NaN           NaN                NaN                     NaN
+mean    1.710542e+06  1.029782e+05      NaN  1.715486e+01  2.776219e+00       1.345202e+01            1.111484e+01
+std     9.875817e+05  5.953372e+04      NaN  1.773316e+01  2.046829e+00       4.226088e+00            9.206737e+00
+min     1.000000e+00  1.000000e+00      NaN  1.000000e+00  0.000000e+00       0.000000e+00            0.000000e+00
+25%     8.552715e+05  5.139400e+04      NaN  5.000000e+00  1.000000e+00       1.000000e+01            4.000000e+00
+50%     1.710542e+06  1.026890e+05      NaN  1.100000e+01  3.000000e+00       1.300000e+01            7.000000e+00
+75%     2.565812e+06  1.543850e+05      NaN  2.300000e+01  5.000000e+00       1.600000e+01            1.500000e+01
+max     3.421083e+06  2.062090e+05      NaN  1.000000e+02  6.000000e+00       2.300000e+01            3.000000e+01
+
+info():
+<class 'pandas.DataFrame'>
+RangeIndex: 3421083 entries, 0 to 3421082
+Data columns (total 7 columns):
+ #   Column                  Dtype  
+---  ------                  -----  
+ 0   order_id                int64  
+ 1   user_id                 int64  
+ 2   eval_set                str    
+ 3   order_number            int64  
+ 4   order_dow               int64  
+ 5   order_hour_of_day       int64  
+ 6   days_since_prior_order  float64
+dtypes: float64(1), int64(5), str(1)
+memory usage: 182.7 MB
+
+
+isnull().sum():
+order_id                       0
+user_id                        0
+eval_set                       0
+order_number                   0
+order_dow                      0
+order_hour_of_day              0
+days_since_prior_order    206209
+dtype: int64
+Duplicate rows: 0
+
+FILE: order_products_train
+shape: (1384617, 4)
+columns: ['order_id', 'product_id', 'add_to_cart_order', 'reordered']
+
+dtypes:
+order_id             int64
+product_id           int64
+add_to_cart_order    int64
+reordered            int64
+dtype: object
+
+head(5):
+   order_id  product_id  add_to_cart_order  reordered
+0         1       49302                  1          1
+1         1       11109                  2          1
+2         1       10246                  3          0
+3         1       49683                  4          0
+4         1       43633                  5          1
+
+describe():
+           order_id    product_id  add_to_cart_order     reordered
+count  1.384617e+06  1.384617e+06       1.384617e+06  1.384617e+06
+mean   1.706298e+06  2.555624e+04       8.758044e+00  5.985944e-01
+std    9.897326e+05  1.412127e+04       7.423936e+00  4.901829e-01
+min    1.000000e+00  1.000000e+00       1.000000e+00  0.000000e+00
+25%    8.433700e+05  1.338000e+04       3.000000e+00  0.000000e+00
+50%    1.701880e+06  2.529800e+04       7.000000e+00  1.000000e+00
+75%    2.568023e+06  3.794000e+04       1.200000e+01  1.000000e+00
+max    3.421070e+06  4.968800e+04       8.000000e+01  1.000000e+00
+
+info():
+<class 'pandas.DataFrame'>
+RangeIndex: 1384617 entries, 0 to 1384616
+Data columns (total 4 columns):
+ #   Column             Non-Null Count    Dtype
+---  ------             --------------    -----
+ 0   order_id           1384617 non-null  int64
+ 1   product_id         1384617 non-null  int64
+ 2   add_to_cart_order  1384617 non-null  int64
+ 3   reordered          1384617 non-null  int64
+dtypes: int64(4)
+memory usage: 42.3 MB
+
+
+isnull().sum():
+order_id             0
+product_id           0
+add_to_cart_order    0
+reordered            0
+dtype: int64
+Duplicate rows: 0
+
+FILE (chunked): order_products_prior
+columns: ['order_id', 'product_id', 'add_to_cart_order', 'reordered']
+dtypes:
+order_id             int64
+product_id           int64
+add_to_cart_order    int64
+reordered            int64
+dtype: object
+Total rows: 32434489
+Total duplicates: 0
+isnull().sum():
+order_id             0
+product_id           0
+add_to_cart_order    0
+reordered            0
+dtype: int64
+

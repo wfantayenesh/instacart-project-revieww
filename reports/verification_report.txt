@@ -1,0 +1,13 @@
+Instacart Verification Report
+======================================================================
+
+  Table                             Cleaned     Loaded  DB COUNT(*)   Rejected
+  ----------------------------------------------------------------------
+  aisles                                134        134          134          0
+  departments                            21         21           21          0
+  products                           49,688     49,688       49,688          0
+  orders                          3,421,083  3,421,083    3,421,083          0
+  order_products_train            1,384,617  1,384,617    1,384,617          0
+  order_products_prior                    0  3,000,000    3,000,000          0
+
+  [OK] All row counts match the database COUNT(*)

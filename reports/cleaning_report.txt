@@ -1,0 +1,38 @@
+Instacart Cleaning Report
+==================================================
+
+aisles - before: 134
+aisles - after: 134
+aisles - removed: 0
+
+departments - before: 21
+departments - after: 21
+departments - removed: 0
+
+products - before: 49688
+products - after: 49688
+products - removed: 0
+
+orders - before: 3421083
+missing values:
+order_id                       0
+user_id                        0
+eval_set                       0
+order_number                   0
+order_dow                      0
+order_hour_of_day              0
+days_since_prior_order    206209
+is_first_order                 0
+order_period                   0
+dtype: int64
+NOTE: days_since_prior_order NaN is valid - means first order
+orders - after: 3421083
+orders - removed: 0
+
+train - before: 1384617
+orphan order_id: 0
+orphan product_id: 0
+train - after: 1384617
+train - removed: 0
+
+Cleaning complete.
